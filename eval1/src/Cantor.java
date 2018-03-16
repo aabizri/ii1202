@@ -3,12 +3,9 @@ public class Cantor {
         return cantorR(a,b,0,0,0);
     }
 
-    public static int cantorR(int x, int y, int curX, int curY, int previousVal) {
-        // Condition
-        System.out.printf("Appel à cantorR avec curX: %d, CurY: %d, val: %d\n",curX, curY, previousVal);
-
+    public static int cantorR(int x, int y, int curX, int curY, int val) {
         // Valeur
-        int val = previousVal + 1;
+        val++;
 
         // Si on est sur l'ordonnée, on passe à x = y + 1, y = 0
         if (curX == 0) {
